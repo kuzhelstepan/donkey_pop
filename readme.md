@@ -1,0 +1,3 @@
+This project is to create a simple web page for a student run ice popsicle stand at a school fare.
+ It will will later be deployed to azure web application.
+ the page should have a big space right below the header for the logo image use donkey.png and then below that a space for an intro paragraph, then if you scroll down there should be a carousel slider selection one of the slides is a box with a picture of a popsicle use the popsicle.jpg file and the space to put the price of $0.5 or $1 for 2 popsicles beneath, the next slide is a a space for me to put a picture and a 3-5 sentences about the popsicle, in the footer it should have a space for me to put stuff about my team, 

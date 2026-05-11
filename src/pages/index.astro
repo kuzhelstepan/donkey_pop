@@ -1,0 +1,85 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import donkey from '../../donkey.png';
+import popsicle from '../../popsicle.jpg';
+---
+
+<BaseLayout title="School Fair Popsicles" description="A student-run ice popsicle stand for the school fair.">
+  <main class="site-shell">
+    <header class="topbar">
+      <p class="eyebrow">School Fair Treats</p>
+      <h1>Cool popsicles for the fair</h1>
+      <p class="topbar-copy">
+        A bright, simple page for your student-run stand. Update the text, pricing, and team details as your menu takes shape.
+      </p>
+    </header>
+
+    <section class="hero" aria-labelledby="logo-title">
+      <div class="hero-card">
+        <p class="section-label" id="logo-title">Logo space</p>
+        <img src={donkey.src} alt="Logo for the school fair popsicle stand" class="hero-logo" />
+      </div>
+    </section>
+
+    <section class="intro-card" aria-labelledby="intro-title">
+      <h2 id="intro-title">Intro paragraph</h2>
+      <p>
+        Welcome to our student-run popsicle stand at the school fair. This space is for a short introduction about the stand, a friendly
+        greeting, or anything visitors should know before they browse the flavors below.
+      </p>
+    </section>
+
+    <section class="carousel-section" aria-labelledby="carousel-title">
+      <div class="section-heading">
+        <div>
+          <p class="section-label">Carousel</p>
+          <h2 id="carousel-title">Featured popsicles</h2>
+        </div>
+        <p>Swipe or scroll to browse the slides.</p>
+      </div>
+
+      <div class="carousel-actions" aria-label="Slide shortcuts">
+        <a href="#slide-1">1</a>
+        <a href="#slide-2">2</a>
+      </div>
+
+      <div class="carousel-track" tabindex="0" aria-label="Popsicle carousel">
+        <article class="slide" id="slide-1">
+          <div class="slide-media">
+            <img src={popsicle.src} alt="Popsicle displayed for sale" />
+          </div>
+          <div class="slide-copy">
+            <h3>Fresh popsicle box</h3>
+            <p class="price">$0.5 or $1 for 2 popsicles</p>
+            <p>
+              Use this slide to feature the pictured popsicle, share the flavor, and highlight anything customers should know before they
+              buy. The pricing line is already placed for you.
+            </p>
+          </div>
+        </article>
+
+        <article class="slide" id="slide-2">
+          <div class="slide-media slide-placeholder" aria-hidden="true">
+            <span>Picture space</span>
+          </div>
+          <div class="slide-copy">
+            <h3>Popsicle story</h3>
+            <p class="placeholder-note">Add a picture here and write 3-5 sentences about the popsicle.</p>
+            <p>
+              This slide can explain the flavor, ingredients, or what makes the popsicle special. Keep it friendly, simple, and easy for
+              fair visitors to read quickly.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-card">
+      <p class="section-label">Team</p>
+      <h2>Meet the team</h2>
+      <p>Add your team details, roles, or a short thank-you message in this footer area.</p>
+    </div>
+  </footer>
+</BaseLayout>
