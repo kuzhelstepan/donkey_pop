@@ -5,9 +5,11 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
-    "preview": "astro preview"
+    "preview": "astro preview",
+    "start": "npx serve dist -l $PORT"
   },
   "dependencies": {
-    "astro": "^5.10.0"
+    "astro": "^5.10.0",
+    "serve": "^14.2.0"
   }
 }
