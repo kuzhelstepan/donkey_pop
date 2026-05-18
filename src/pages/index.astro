@@ -1,7 +1,5 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import donkey from '../../donkey.png';
-import popsicle from '../../popsicle.jpg';
 ---
 
 <BaseLayout title="School Fair Popsicles" description="A student-run ice popsicle stand for the school fair.">
@@ -17,7 +15,7 @@ import popsicle from '../../popsicle.jpg';
     <section class="hero" aria-labelledby="logo-title">
       <div class="hero-card">
         <p class="section-label" id="logo-title">Logo space</p>
-        <img src={donkey.src} alt="Logo for the school fair popsicle stand" class="hero-logo" />
+        <img src="/donkey.png" alt="Logo for the school fair popsicle stand" class="hero-logo" />
       </div>
     </section>
 
@@ -45,7 +43,7 @@ import popsicle from '../../popsicle.jpg';
       <div class="carousel-track" tabindex="0" aria-label="Popsicle carousel">
         <article class="slide" id="slide-1">
           <div class="slide-media">
-            <img src={popsicle.src} alt="Popsicle displayed for sale" />
+            <img src="/popsicle.jpg" alt="Popsicle displayed for sale" />
           </div>
           <div class="slide-copy">
             <h3>Fresh popsicle box</h3>

@@ -4,3 +4,6 @@ dist
 .env
 .env.*
 !.env.example
+config.ps1
+.vscode/settings.json
+/publishing.profile

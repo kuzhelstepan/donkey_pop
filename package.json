@@ -6,10 +6,10 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "start": "node ./dist/server/entry.mjs"
+    "start": "npx serve dist -l $PORT"
   },
   "dependencies": {
-    "@astrojs/node": "^9.1.0",
-    "astro": "^5.10.0"
+    "astro": "^5.10.0",
+    "serve": "^14.2.0"
   }
 }
